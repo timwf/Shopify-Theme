@@ -1,4 +1,5 @@
 {% for collection in collections %}
+<h1>list collections twf</h1>
   {% unless collection.handle == 'frontpage' %}
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
     <a href="{{ collection.url }}">More {{ collection_title }} &rsaquo;</a>
